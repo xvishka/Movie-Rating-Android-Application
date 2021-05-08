@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:elevation="4dp"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_circle"
+        android:src="@drawable/good"
+        app:tint="#004D40"
+        android:id="@+id/check"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:elevation="4dp"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_circle_outline"
+        android:id="@+id/uncheck"
+        android:visibility="visible"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_layout"
+        >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="9dp"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+             
+            app:layout_constraintTop_toBottomOf="@id/name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="9dp"
+            android:text="director"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+             
+            app:layout_constraintTop_toBottomOf="@id/director"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="9dp"
+            android:text="actor"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="9dp"
+            />
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+             
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/name"
+            app:layout_constraintRight_toRightOf="parent"
+            android:gravity="end"
+            android:layout_marginRight="15dp"
+            android:text="year"
+            android:textSize="12dp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/favourite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+
+            android:gravity="end"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/director"
+            android:layout_marginRight="15dp"
+            android:text="fav"
+            android:textSize="12dp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+             
+            android:gravity="end"
+            app:layout_constraintTop_toBottomOf="@id/favourite"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/actor"
+            android:layout_marginRight="15dp"
+            android:text="review"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="9dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/actor"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="9dp"
+            android:id="@+id/rv_rating"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

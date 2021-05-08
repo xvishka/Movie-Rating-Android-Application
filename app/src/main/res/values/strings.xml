@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Movie Ratings 🎬</string>
+    <string name="register_movie">Register Movie</string>
+    <string name="display_movies">Display Movies</string>
+    <string name="favourites">Favorites</string>
+    <string name="edit_movies">Edit Movies</string>
+    <string name="search">Search</string>
+    <string name="ratings">Ratings</string>
+    <string name="movie_title">Title of the Movie</string>
+    <string name="movie_year">Year</string>
+    <string name="movie_director">Director</string>
+    <string name="movie_actors">Cast</string>
+    <string name="movie_rating">Rating</string>
+    <string name="movie_review">Review</string>
+    <string name="save_btn">Save</string>
+    <string name="favourites_btn">Add to Favorites</string>
+    <string name="save_favourite_btn">Save</string>
+    <string name="edit_btn">Edit</string>
+    <string name="lookup_button">Lookup</string>
+    <string name="search_a_movie">Search a Movie</string>
+</resources>
